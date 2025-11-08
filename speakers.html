@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers - Qiskit Fall Fest 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-animation"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo-section">
+                <img src="Badge.png" alt="QFF Logo" class="nav-logo">
+                <span class="logo-text">QFF'25</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="speakers.html" class="active">Speakers</a></li>
+                <li><a href="organizers.html">Organizers</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Featured Speakers</h1>
+            <p class="page-subtitle">Learn from quantum computing experts and industry leaders</p>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers-detail-section container">
+        <div id="speakers-container" class="speakers-detail-grid">
+            <!-- Speakers will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Speaker Modal -->
+    <div id="speaker-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content speaker-modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="speaker-modal-header">
+                    <img id="modal-speaker-img" src="" alt="" class="modal-speaker-image">
+                    <div class="speaker-modal-info">
+                        <h2 id="modal-speaker-name"></h2>
+                        <p id="modal-speaker-title" class="speaker-modal-title"></p>
+                        <p id="modal-speaker-org" class="speaker-modal-org"></p>
+                        <div id="modal-speaker-social" class="speaker-modal-social"></div>
+                    </div>
+                </div>
+                <div class="speaker-modal-details">
+                    <div class="speaker-modal-section">
+                        <h3>Biography</h3>
+                        <p id="modal-speaker-bio"></p>
+                    </div>
+                    <div class="speaker-modal-section">
+                        <h3>Talk Information</h3>
+                        <h4 id="modal-talk-title" class="talk-title"></h4>
+                        <p id="modal-talk-abstract"></p>
+                        <div class="session-info">
+                            <div class="session-detail">
+                                <span class="icon">🕐</span>
+                                <span id="modal-session-time"></span>
+                            </div>
+                            <div class="session-detail">
+                                <span class="icon">📍</span>
+                                <span id="modal-session-room"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-poster-section" class="speaker-modal-section poster-section" style="display: none;">
+                        <h3>Presentation Poster</h3>
+                        <div class="poster-preview">
+                            <img id="modal-poster-img" src="" alt="Presentation Poster" class="poster-thumbnail">
+                            <div class="poster-actions">
+                                <button id="view-poster-btn" class="btn-primary">
+                                    <span class="icon">🔍</span> View Full Poster
+                                </button>
+                                <a id="download-poster-btn" class="btn-secondary" download>
+                                    <span class="icon">⬇️</span> Download Poster
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster Lightbox -->
+    <div id="poster-lightbox" class="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img id="lightbox-poster-img" src="" alt="Full Poster">
+            <div class="lightbox-controls">
+                <button id="zoom-in-btn" class="lightbox-btn" aria-label="Zoom in">+</button>
+                <button id="zoom-out-btn" class="lightbox-btn" aria-label="Zoom out">−</button>
+                <button id="reset-zoom-btn" class="lightbox-btn" aria-label="Reset zoom">⟲</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://discord.gg/qPmNF3ae" aria-label="Discord">👾</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: haverfordquantum@gmail.com</li>
+                    <li>Location: 370 Lancaster Ave, Haverford, PA 19041</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Haverford College Qiskit Fall Fest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="speakers.js"></script>
+</body>
+</html>
