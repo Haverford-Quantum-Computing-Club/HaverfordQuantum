@@ -1,7 +1,7 @@
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functions
-    initParticles();
+    initQuantumParticles();
     initSmoothScroll();
     initHeaderScroll();
     initAnimations();
@@ -9,21 +9,67 @@ document.addEventListener('DOMContentLoaded', function() {
     initMouseEffects();
     initFormValidation();
     initCountdown();
+    initCustomCursor();
+    init3DCardEffects();
+    initQuantumCircuit();
+    initAnimatedCounter();
+    initGlitchEffect();
 });
 
-// Create floating particles in hero section
-function initParticles() {
+// Enhanced quantum particles with physics
+function initQuantumParticles() {
     const particlesContainer = document.getElementById('particles');
     if (!particlesContainer) return;
-    
-    for (let i = 0; i < 20; i++) {
+
+    const particles = [];
+    const particleCount = 50;
+
+    for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 20 + 's';
-        particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+        particle.className = 'quantum-particle';
+
+        const size = Math.random() * 4 + 2;
+        const hue = Math.random() * 60 + 240; // Blue to purple range
+
+        particle.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            background: radial-gradient(circle, hsl(${hue}, 100%, 70%), transparent);
+            border-radius: 50%;
+            box-shadow: 0 0 ${size * 3}px hsl(${hue}, 100%, 50%);
+            pointer-events: none;
+        `;
+
+        particles.push({
+            element: particle,
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            vx: (Math.random() - 0.5) * 0.5,
+            vy: (Math.random() - 0.5) * 0.5,
+            size: size,
+            hue: hue
+        });
+
         particlesContainer.appendChild(particle);
     }
+
+    function animateParticles() {
+        particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+
+            if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+            if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+
+            p.element.style.transform = `translate(${p.x}px, ${p.y}px)`;
+            p.element.style.opacity = 0.3 + Math.sin(Date.now() * 0.001 + p.x) * 0.2;
+        });
+
+        requestAnimationFrame(animateParticles);
+    }
+
+    animateParticles();
 }
 
 // Smooth scrolling for navigation links
@@ -431,6 +477,236 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Custom animated cursor
+function initCustomCursor() {
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    const cursorGlow = document.createElement('div');
+    cursorGlow.className = 'cursor-glow';
+
+    document.body.appendChild(cursor);
+    document.body.appendChild(cursorGlow);
+
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    let glowX = 0, glowY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.2;
+        cursorY += (mouseY - cursorY) * 0.2;
+        glowX += (mouseX - glowX) * 0.1;
+        glowY += (mouseY - glowY) * 0.1;
+
+        cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+        cursorGlow.style.transform = `translate(${glowX}px, ${glowY}px)`;
+
+        requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+
+    // Add hover effects
+    const interactives = document.querySelectorAll('a, button, .week-card, .intro-card, .speaker-card');
+    interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) scale(1.5)`;
+            cursor.style.borderColor = '#ec4899';
+        });
+        el.addEventListener('mouseleave', () => {
+            cursor.style.borderColor = '#8b5cf6';
+        });
+    });
+}
+
+// 3D card tilt effects
+function init3DCardEffects() {
+    const cards = document.querySelectorAll('.week-card, .intro-card, .speaker-card, .organizer-card, .speaker-detail-card');
+
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+        });
+    });
+}
+
+// Quantum circuit animation
+function initQuantumCircuit() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    const canvas = document.createElement('canvas');
+    canvas.className = 'quantum-circuit-canvas';
+    canvas.style.cssText = `
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0.3;
+        z-index: 1;
+    `;
+    hero.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const lines = [];
+    const lineCount = 5;
+
+    for (let i = 0; i < lineCount; i++) {
+        lines.push({
+            y: (i + 1) * (canvas.height / (lineCount + 1)),
+            nodes: [],
+            progress: Math.random()
+        });
+    }
+
+    function drawCircuit() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = '#8b5cf6';
+        ctx.lineWidth = 2;
+
+        lines.forEach((line, idx) => {
+            // Draw horizontal line
+            const gradient = ctx.createLinearGradient(0, line.y, canvas.width, line.y);
+            gradient.addColorStop(0, 'rgba(139, 92, 246, 0)');
+            gradient.addColorStop(0.5, 'rgba(139, 92, 246, 0.8)');
+            gradient.addColorStop(1, 'rgba(139, 92, 246, 0)');
+            ctx.strokeStyle = gradient;
+
+            ctx.beginPath();
+            ctx.moveTo(0, line.y);
+            ctx.lineTo(canvas.width, line.y);
+            ctx.stroke();
+
+            // Draw quantum gates (circles)
+            for (let i = 0; i < 6; i++) {
+                const x = (i + 1) * (canvas.width / 7);
+                const pulse = Math.sin(Date.now() * 0.002 + i + idx) * 0.5 + 0.5;
+
+                ctx.fillStyle = `rgba(236, 72, 153, ${0.3 + pulse * 0.3})`;
+                ctx.beginPath();
+                ctx.arc(x, line.y, 8 + pulse * 4, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.strokeStyle = '#ec4899';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Draw glow
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = '#ec4899';
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+            }
+        });
+
+        requestAnimationFrame(drawCircuit);
+    }
+
+    drawCircuit();
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+}
+
+// Animated counter for statistics
+function initAnimatedCounter() {
+    const stats = document.querySelectorAll('.stat-number');
+    const observerOptions = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const finalValue = target.textContent.replace(/[^0-9]/g, '');
+                const hasPlus = target.textContent.includes('+');
+
+                if (finalValue) {
+                    animateValue(target, 0, parseInt(finalValue), 2000, hasPlus);
+                }
+                observer.unobserve(target);
+            }
+        });
+    }, observerOptions);
+
+    stats.forEach(stat => observer.observe(stat));
+}
+
+function animateValue(element, start, end, duration, hasPlus = false) {
+    const startTime = Date.now();
+
+    function update() {
+        const now = Date.now();
+        const progress = Math.min((now - startTime) / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 3); // Ease out cubic
+        const current = Math.floor(start + (end - start) * easeProgress);
+
+        element.textContent = hasPlus ? `+${current}` : current;
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = hasPlus ? `+${end}` : end;
+        }
+    }
+
+    update();
+}
+
+// Glitch effect for titles
+function initGlitchEffect() {
+    const titles = document.querySelectorAll('.section-title, .page-title');
+
+    titles.forEach(title => {
+        title.addEventListener('mouseenter', () => {
+            title.classList.add('glitch');
+            setTimeout(() => title.classList.remove('glitch'), 500);
+        });
+    });
+}
+
+// Scroll progress indicator
+function initScrollProgress() {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+
+    window.addEventListener('scroll', () => {
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    });
+}
+
+// Initialize scroll progress
+initScrollProgress();
 
 // Export functions for use in other scripts if needed
 window.qffUtils = {
