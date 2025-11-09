@@ -1672,14 +1672,18 @@ footer {
     filter: blur(10px);
 }
 
-/* Hide default cursor on desktop */
+/* Hide default cursor on desktop - only when custom cursor is active */
 @media (min-width: 769px) {
-    body {
+    body.custom-cursor-active {
         cursor: none;
     }
 
-    a, button, .week-card, .intro-card, .speaker-card {
-        cursor: none;
+    body.custom-cursor-active a,
+    body.custom-cursor-active button,
+    body.custom-cursor-active .week-card,
+    body.custom-cursor-active .intro-card,
+    body.custom-cursor-active .speaker-card {
+        cursor: none !important;
     }
 }
 
@@ -2080,26 +2084,8 @@ header,
     transform: translateY(0);
 }
 
-/* Enhanced Nav Links */
-nav .nav-links a {
-    position: relative;
-    overflow: hidden;
-}
-
-nav .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, #8b5cf6, #ec4899);
-    transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-nav .nav-links a:hover::after {
-    left: 0;
-}
+/* Enhanced Nav Links - Disabled to prevent conflict with existing styles */
+/* Navigation already has proper underline styling defined earlier in the CSS */
 
 /* Loading Animation */
 @keyframes loading-spin {

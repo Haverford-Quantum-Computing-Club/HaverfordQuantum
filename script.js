@@ -480,6 +480,9 @@ document.head.appendChild(style);
 
 // Custom animated cursor
 function initCustomCursor() {
+    // Only enable on desktop
+    if (window.innerWidth < 769) return;
+
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     const cursorGlow = document.createElement('div');
@@ -487,6 +490,9 @@ function initCustomCursor() {
 
     document.body.appendChild(cursor);
     document.body.appendChild(cursorGlow);
+
+    // Add class to hide default cursor
+    document.body.classList.add('custom-cursor-active');
 
     let mouseX = 0, mouseY = 0;
     let cursorX = 0, cursorY = 0;
