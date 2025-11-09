@@ -272,10 +272,19 @@ nav {
 .page-title {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-purple) 100%);
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899,
+        #3b82f6,
+        #8b5cf6
+    );
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradient-text 4s ease infinite;
+    position: relative;
 }
 
 .page-subtitle {
@@ -1819,11 +1828,7 @@ footer {
     }
 }
 
-.page-title,
-.section-title {
-    animation: neon-glow 2s ease-in-out infinite;
-    position: relative;
-}
+/* Removed conflicting neon-glow animation - consolidated below */
 
 /* Holographic Background Effect */
 .hero::after {
@@ -2042,7 +2047,8 @@ header,
     }
 }
 
-.page-title,
+/* Moved to .page-title and .section-title definitions above - no duplicate needed */
+
 .section-title {
     background: linear-gradient(
         90deg,
@@ -2056,6 +2062,7 @@ header,
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: gradient-text 4s ease infinite;
+    position: relative;
 }
 
 /* Pulsating Glow for Important Elements */
