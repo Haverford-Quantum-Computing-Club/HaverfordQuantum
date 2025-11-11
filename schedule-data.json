@@ -11,13 +11,6 @@
         "type": "ceremony"
       },
       {
-        "time": "5:30 PM - 6:00 PM",
-        "title": "QBraid Platform Mentorship",
-        "location": "Zoom",
-        "description": "COO of QBraid provides mentorship on how to use the QBraid platform for quantum computing",
-        "type": "workshop"
-      },
-      {
         "time": "7:00 PM - 8:00 PM",
         "title": "Keynote: Dr. Gushu Li",
         "location": "TBA",
