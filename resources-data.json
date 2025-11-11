@@ -1,0 +1,130 @@
+[
+  {
+    "category": "Day 1 - Notebooks",
+    "description": "Jupyter notebooks for Day 1 workshops and challenges",
+    "files": [
+      {
+        "title": "Introduction to Quantum Computing",
+        "description": "Basic concepts of quantum mechanics and quantum computing",
+        "filename": "day1_introduction_to_quantum_computing.ipynb",
+        "path": "resources/notebooks/day1_introduction_to_quantum_computing.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Qiskit Basics",
+        "description": "Getting started with Qiskit framework and your first quantum circuits",
+        "filename": "day1_qiskit_basics.ipynb",
+        "path": "resources/notebooks/day1_qiskit_basics.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Quantum Gates and Circuits",
+        "description": "Learn about single and multi-qubit gates and circuit construction",
+        "filename": "day1_quantum_gates_circuits.ipynb",
+        "path": "resources/notebooks/day1_quantum_gates_circuits.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      }
+    ]
+  },
+  {
+    "category": "Day 2 - Notebooks",
+    "description": "Advanced algorithms and challenge notebooks for Day 2",
+    "files": [
+      {
+        "title": "QAOA Algorithm",
+        "description": "Quantum Approximate Optimization Algorithm tutorial",
+        "filename": "day2_qaoa_algorithm.ipynb",
+        "path": "resources/notebooks/day2_qaoa_algorithm.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "VQE Algorithm",
+        "description": "Variational Quantum Eigensolver for chemistry applications",
+        "filename": "day2_vqe_algorithm.ipynb",
+        "path": "resources/notebooks/day2_vqe_algorithm.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Grover's Algorithm",
+        "description": "Quantum search algorithm implementation",
+        "filename": "day2_grover_algorithm.ipynb",
+        "path": "resources/notebooks/day2_grover_algorithm.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Quantum Machine Learning",
+        "description": "Introduction to QML with Qiskit",
+        "filename": "day2_quantum_machine_learning.ipynb",
+        "path": "resources/notebooks/day2_quantum_machine_learning.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      }
+    ]
+  },
+  {
+    "category": "Challenges",
+    "description": "Hackathon challenge notebooks",
+    "files": [
+      {
+        "title": "Beginner Challenge",
+        "description": "Entry-level quantum computing challenge",
+        "filename": "challenge_beginner.ipynb",
+        "path": "resources/notebooks/challenge_beginner.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Intermediate Challenge",
+        "description": "Intermediate quantum algorithm challenge",
+        "filename": "challenge_intermediate.ipynb",
+        "path": "resources/notebooks/challenge_intermediate.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      },
+      {
+        "title": "Advanced Challenge",
+        "description": "Advanced quantum computing challenge for experienced participants",
+        "filename": "challenge_advanced.ipynb",
+        "path": "resources/notebooks/challenge_advanced.ipynb",
+        "type": "notebook",
+        "size": "TBD"
+      }
+    ]
+  },
+  {
+    "category": "Reference Materials",
+    "description": "PDF guides and reference documents",
+    "files": [
+      {
+        "title": "Quantum Computing Quick Reference",
+        "description": "Cheat sheet for quantum gates and operations",
+        "filename": "quantum_computing_reference.pdf",
+        "path": "resources/pdfs/quantum_computing_reference.pdf",
+        "type": "pdf",
+        "size": "TBD"
+      },
+      {
+        "title": "Qiskit Documentation Guide",
+        "description": "Essential Qiskit functions and methods",
+        "filename": "qiskit_guide.pdf",
+        "path": "resources/pdfs/qiskit_guide.pdf",
+        "type": "pdf",
+        "size": "TBD"
+      },
+      {
+        "title": "Event Information",
+        "description": "Complete event schedule and logistics",
+        "filename": "event_info.pdf",
+        "path": "resources/pdfs/event_info.pdf",
+        "type": "pdf",
+        "size": "TBD"
+      }
+    ]
+  }
+]

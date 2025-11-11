@@ -1,0 +1,154 @@
+[
+  {
+    "date": "November 14th, 2025",
+    "day": "Day 1",
+    "events": [
+      {
+        "time": "9:00 AM - 9:30 AM",
+        "title": "Registration & Check-in",
+        "location": "Main Lobby",
+        "description": "Welcome! Pick up your badge and materials",
+        "type": "logistics"
+      },
+      {
+        "time": "9:30 AM - 10:00 AM",
+        "title": "Opening Ceremony",
+        "location": "Main Auditorium",
+        "description": "Welcome address and event overview",
+        "type": "ceremony"
+      },
+      {
+        "time": "10:00 AM - 11:30 AM",
+        "title": "Workshop: Quantum Mechanics in a Nutshell",
+        "location": "Room 101",
+        "description": "Introduction to quantum computing fundamentals",
+        "type": "workshop"
+      },
+      {
+        "time": "11:30 AM - 12:30 PM",
+        "title": "Workshop: Qiskit Basics & Installation",
+        "location": "Room 101",
+        "description": "Get started with Qiskit framework",
+        "type": "workshop"
+      },
+      {
+        "time": "12:30 PM - 1:30 PM",
+        "title": "Lunch Break",
+        "location": "Cafeteria",
+        "description": "Networking and refreshments",
+        "type": "break"
+      },
+      {
+        "time": "1:30 PM - 3:00 PM",
+        "title": "Workshop: Quantum Gates & Circuits",
+        "location": "Room 101",
+        "description": "Learn about quantum gates and circuit design",
+        "type": "workshop"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "title": "Hands-on: First Quantum Programs",
+        "location": "Computer Lab",
+        "description": "Write your first quantum program",
+        "type": "hands-on"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "title": "Team Formation & Q&A",
+        "location": "Main Hall",
+        "description": "Form teams and ask questions",
+        "type": "networking"
+      },
+      {
+        "time": "7:00 PM - 8:00 PM",
+        "title": "Keynote: Dr. Gushu Li",
+        "location": "Chase Auditorium",
+        "description": "The Software Bridge: How Quantum Compilers Translate Algorithms into Reality",
+        "type": "talk"
+      }
+    ]
+  },
+  {
+    "date": "November 15th, 2025",
+    "day": "Day 2",
+    "events": [
+      {
+        "time": "9:00 AM - 9:30 AM",
+        "title": "Morning Check-in",
+        "location": "Main Lobby",
+        "description": "Get ready for Day 2!",
+        "type": "logistics"
+      },
+      {
+        "time": "9:30 AM - 10:30 AM",
+        "title": "Beginner's Challenge Kickoff",
+        "location": "Main Auditorium",
+        "description": "Introduction to hackathon challenges",
+        "type": "challenge"
+      },
+      {
+        "time": "10:30 AM - 12:00 PM",
+        "title": "Workshop: QAOA, VQE, Shor's & Grover's Algorithms",
+        "location": "Room 101",
+        "description": "Advanced quantum algorithms",
+        "type": "workshop"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "title": "Lunch Break",
+        "location": "Cafeteria",
+        "description": "Networking and refreshments",
+        "type": "break"
+      },
+      {
+        "time": "1:00 PM - 2:00 PM",
+        "title": "Workshop: Quantum Machine Learning",
+        "location": "Room 102",
+        "description": "Explore QML applications",
+        "type": "workshop"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "title": "Intermediate & Advanced Challenges",
+        "location": "Computer Lab",
+        "description": "Work on advanced notebooks",
+        "type": "challenge"
+      },
+      {
+        "time": "3:00 PM - 3:30 PM",
+        "title": "Coffee Break",
+        "location": "Lounge",
+        "description": "Quick refresh",
+        "type": "break"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "title": "Keynote: Dr. Phalgun Lolur",
+        "location": "VCAM Screening Room",
+        "description": "Quantum Leap: Navigating Career Possibilities in Quantum Technologies",
+        "type": "talk"
+      },
+      {
+        "time": "5:00 PM - 6:00 PM",
+        "title": "Final Project Work Time",
+        "location": "Computer Lab",
+        "description": "Polish your projects",
+        "type": "challenge"
+      },
+      {
+        "time": "6:00 PM - 7:00 PM",
+        "title": "Team Presentations",
+        "location": "Main Auditorium",
+        "description": "Present your quantum projects",
+        "type": "presentation"
+      },
+      {
+        "time": "7:00 PM - 7:30 PM",
+        "title": "Awards & Closing Ceremony",
+        "location": "Main Auditorium",
+        "description": "Prize ceremony and closing remarks",
+        "type": "ceremony"
+      }
+    ]
+  }
+]
