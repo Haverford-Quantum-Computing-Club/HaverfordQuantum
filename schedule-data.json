@@ -1,153 +1,104 @@
 [
   {
-    "date": "November 14th, 2025",
-    "day": "Day 1",
+    "date": "Friday, November 14th, 2025",
+    "day": "Day 1 - Friday",
     "events": [
       {
-        "time": "9:00 AM - 9:30 AM",
-        "title": "Registration & Check-in",
-        "location": "Main Lobby",
-        "description": "Welcome! Pick up your badge and materials",
-        "type": "logistics"
-      },
-      {
-        "time": "9:30 AM - 10:00 AM",
-        "title": "Opening Ceremony",
-        "location": "Main Auditorium",
-        "description": "Welcome address and event overview",
+        "time": "5:00 PM - 7:00 PM",
+        "title": "Kick-Off & Tutorials",
+        "location": "TBA",
+        "description": "Kick-Off, Tutorials, Level 0 Notebook is up; Team pairings happening; Dinner is happening",
         "type": "ceremony"
-      },
-      {
-        "time": "10:00 AM - 11:30 AM",
-        "title": "Workshop: Quantum Mechanics in a Nutshell",
-        "location": "Room 101",
-        "description": "Introduction to quantum computing fundamentals",
-        "type": "workshop"
-      },
-      {
-        "time": "11:30 AM - 12:30 PM",
-        "title": "Workshop: Qiskit Basics & Installation",
-        "location": "Room 101",
-        "description": "Get started with Qiskit framework",
-        "type": "workshop"
-      },
-      {
-        "time": "12:30 PM - 1:30 PM",
-        "title": "Lunch Break",
-        "location": "Cafeteria",
-        "description": "Networking and refreshments",
-        "type": "break"
-      },
-      {
-        "time": "1:30 PM - 3:00 PM",
-        "title": "Workshop: Quantum Gates & Circuits",
-        "location": "Room 101",
-        "description": "Learn about quantum gates and circuit design",
-        "type": "workshop"
-      },
-      {
-        "time": "3:00 PM - 4:00 PM",
-        "title": "Hands-on: First Quantum Programs",
-        "location": "Computer Lab",
-        "description": "Write your first quantum program",
-        "type": "hands-on"
-      },
-      {
-        "time": "4:00 PM - 5:00 PM",
-        "title": "Team Formation & Q&A",
-        "location": "Main Hall",
-        "description": "Form teams and ask questions",
-        "type": "networking"
       },
       {
         "time": "7:00 PM - 8:00 PM",
         "title": "Keynote: Dr. Gushu Li",
-        "location": "Chase Auditorium",
-        "description": "The Software Bridge: How Quantum Compilers Translate Algorithms into Reality",
+        "location": "TBA",
+        "description": "Guest Speaker: Dr. Gushu Li, Assistant Professor at the University of Pennsylvania",
         "type": "talk"
+      },
+      {
+        "time": "8:00 PM - 9:15 PM",
+        "title": "Work on Level 0 Notebook",
+        "location": "TBA",
+        "description": "Work on Level 0 Notebook, We provide feedback",
+        "type": "challenge"
+      },
+      {
+        "time": "9:15 PM - 10:00 PM",
+        "title": "Tentative: IBM Speaker",
+        "location": "TBA",
+        "description": "Special guest speaker from IBM (tentative)",
+        "type": "talk"
+      },
+      {
+        "time": "10:00 PM - 12:00 AM",
+        "title": "Level 0 Submission & Level 1 Release",
+        "location": "TBA",
+        "description": "Submission for Level 0 Notebook due at 10:00pm; Level 1 Notebook is up. Team pairing for open challenges is happening",
+        "type": "challenge"
       }
     ]
   },
   {
-    "date": "November 15th, 2025",
-    "day": "Day 2",
+    "date": "Saturday, November 15th, 2025",
+    "day": "Day 2 - Saturday",
     "events": [
       {
-        "time": "9:00 AM - 9:30 AM",
-        "title": "Morning Check-in",
-        "location": "Main Lobby",
-        "description": "Get ready for Day 2!",
-        "type": "logistics"
-      },
-      {
-        "time": "9:30 AM - 10:30 AM",
-        "title": "Beginner's Challenge Kickoff",
-        "location": "Main Auditorium",
-        "description": "Introduction to hackathon challenges",
+        "time": "9:00 AM - 12:00 PM",
+        "title": "Challenges Open",
+        "location": "TBA",
+        "description": "Challenges open; Teams stay paired as for Level 1; prizes are announced",
         "type": "challenge"
-      },
-      {
-        "time": "10:30 AM - 12:00 PM",
-        "title": "Workshop: QAOA, VQE, Shor's & Grover's Algorithms",
-        "location": "Room 101",
-        "description": "Advanced quantum algorithms",
-        "type": "workshop"
       },
       {
         "time": "12:00 PM - 1:00 PM",
         "title": "Lunch Break",
-        "location": "Cafeteria",
-        "description": "Networking and refreshments",
+        "location": "TBA",
+        "description": "Lunch and networking",
         "type": "break"
       },
       {
         "time": "1:00 PM - 2:00 PM",
-        "title": "Workshop: Quantum Machine Learning",
-        "location": "Room 102",
-        "description": "Explore QML applications",
-        "type": "workshop"
+        "title": "Feedback Session",
+        "location": "TBA",
+        "description": "Feedback is open for Challenge contenders",
+        "type": "hands-on"
       },
       {
         "time": "2:00 PM - 3:00 PM",
-        "title": "Intermediate & Advanced Challenges",
-        "location": "Computer Lab",
-        "description": "Work on advanced notebooks",
+        "title": "Feedback & Progress Deadline",
+        "location": "TBA",
+        "description": "Feedback is open for Challenge contenders; Challenges progress due at 3:00pm",
         "type": "challenge"
       },
       {
-        "time": "3:00 PM - 3:30 PM",
-        "title": "Coffee Break",
-        "location": "Lounge",
-        "description": "Quick refresh",
-        "type": "break"
-      },
-      {
-        "time": "4:00 PM - 5:00 PM",
-        "title": "Keynote: Dr. Phalgun Lolur",
-        "location": "VCAM Screening Room",
-        "description": "Quantum Leap: Navigating Career Possibilities in Quantum Technologies",
-        "type": "talk"
-      },
-      {
-        "time": "5:00 PM - 6:00 PM",
-        "title": "Final Project Work Time",
-        "location": "Computer Lab",
-        "description": "Polish your projects",
-        "type": "challenge"
-      },
-      {
-        "time": "6:00 PM - 7:00 PM",
-        "title": "Team Presentations",
-        "location": "Main Auditorium",
-        "description": "Present your quantum projects",
+        "time": "3:00 PM - 4:00 PM",
+        "title": "Presentation of Open Challenges",
+        "location": "TBA",
+        "description": "Teams present their open challenge solutions",
         "type": "presentation"
       },
       {
-        "time": "7:00 PM - 7:30 PM",
+        "time": "4:00 PM - 5:30 PM",
+        "title": "Keynote: Dr. Phalgun Lolur",
+        "location": "TBA",
+        "description": "Guest Speaker: Dr. Phalgun Lolur, Global Scientific Quantum Development Lead, Capgemini's Quantum Lab",
+        "type": "talk"
+      },
+      {
+        "time": "6:00 PM - 6:45 PM",
         "title": "Awards & Closing Ceremony",
-        "location": "Main Auditorium",
-        "description": "Prize ceremony and closing remarks",
+        "location": "TBA",
+        "description": "Winner Announcements, Certificates of Participates and Certificates of Achievement are distributed",
         "type": "ceremony"
+      },
+      {
+        "time": "7:00 PM",
+        "title": "Dinner",
+        "location": "TBA",
+        "description": "Closing dinner and celebration",
+        "type": "break"
       }
     ]
   }
