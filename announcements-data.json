@@ -7,8 +7,8 @@
       "text": "Register Now",
       "url": "registration.html"
     },
-    "startDate": "2025-01-11",
-    "endDate": "2025-01-14",
+    "startDate": "2025-11-11",
+    "endDate": "2025-11-14",
     "dismissible": true,
     "active": true
   },
@@ -20,8 +20,8 @@
       "text": "View Schedule",
       "url": "schedule.html"
     },
-    "startDate": "2025-01-10",
-    "endDate": "2025-01-14",
+    "startDate": "2025-11-10",
+    "endDate": "2025-11-14",
     "dismissible": true,
     "active": false
   },
@@ -33,8 +33,8 @@
       "text": "Download Resources",
       "url": "resources.html"
     },
-    "startDate": "2025-01-13",
-    "endDate": "2025-01-16",
+    "startDate": "2025-11-13",
+    "endDate": "2025-11-16",
     "dismissible": true,
     "active": false
   },
@@ -46,8 +46,8 @@
       "text": "View Schedule",
       "url": "schedule.html"
     },
-    "startDate": "2025-01-14",
-    "endDate": "2025-01-15",
+    "startDate": "2025-11-14",
+    "endDate": "2025-11-15",
     "dismissible": false,
     "active": false
   },
@@ -59,9 +59,9 @@
       "text": "Join Discord",
       "url": "https://discord.gg/qPmNF3ae"
     },
-    "startDate": "2025-01-01",
-    "endDate": "2025-01-16",
+    "startDate": "2025-11-01",
+    "endDate": "2025-11-16",
     "dismissible": true,
-    "active": false
+    "active": true
   }
 ]
