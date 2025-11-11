@@ -19,20 +19,48 @@
   },
   {
     "id": "speaker2",
-    "name": "To be Announced",
-    "title": "TBA",
-    "organization": "TBA",
-    "bio": "Speaker details will be announced soon. Check back for updates!",
-    "talkTitle": "To be Announced",
-    "talkAbstract": "Talk details coming soon.",
+    "name": "Dr. Gushu Li",
+    "title": "Assistant Professor of Engineering and Applied Science",
+    "organization": "University of Pennsylvania",
+    "bio": "Dr. Gushu Li is an Assistant Professor in the Department of Computer and
+  Information Science at the University of Pennsylvania (with a secondary
+  appointment in Electrical and Systems Engineering) where he leads the Penn
+   Quantum System Lab since January 2023, following his Ph.D. from the
+  University of California, Santa Barbara under the advisement of Prof. Yuan
+   Xie and Prof. Yufei Ding. His research spans the full stack of quantum
+  computing systems including quantum compiler design, quantum programming
+  languages, quantum algorithm optimization, quantum computer architecture,
+  and quantum electronic design automation, with his work achieving
+  exceptional real-world impact through widespread industry adoption—most
+  notably his SABRE (SWAP-based BidiREctional heuristic search) qubit
+  mapping algorithm published at ASPLOS'19, which has been selected as the
+  default mapping algorithm in IBM's Qiskit and adopted by Oak Ridge
+  National Lab's XACC/QCOR compiler, and his Paulihedral compilation
+  framework from ASPLOS'22, a generalized block-wise compiler optimization
+  framework for quantum simulation kernels that employs a novel Pauli
+  intermediate representation to maintain high-level semantics and enable
+  large-scale optimizations, which has been integrated into IBM's Qiskit,
+  Amazon's Braket, Quantinuum's TKET, and Oak Ridge National Lab's qcor. His
+   pioneering contributions have earned him prestigious recognition
+  including the 2024 NSF Faculty Early CAREER Award, the 2024 Intel Rising
+  Star Faculty Award, the 2024 NVIDIA Academic Grant Program Award, the ACM
+  SIGPLAN Distinguished Paper Award at OOPSLA 2020 (for his projection-based
+   assertion technique for quantum program debugging, also adopted by
+  Quantinuum's TKET compiler), and the 2021 NSF QISE-NET Triplet Fellowship
+  Award, with his 42 research works accumulating 1,296 citations and
+  establishing him as a leading figure in bridging the gap between
+  theoretical quantum computing and practical, scalable quantum software
+  systems for NISQ-era devices.",
+    "talkTitle": "The Software Bridge: How Quantum Compilers Translate Algorithms into Reality",
+    "talkAbstract": "Quantum computers promise to solve certain problems far faster than classical computers—but programming them is far from straightforward. Between high-level algorithms and fragile quantum hardware lies a crucial layer of software: the quantum compiler. This talk introduces the basic ideas behind quantum compilation and explains how compilers translate human-written quantum programs into the physical instructions that hardware can execute. We will walk through the main steps of the compilation process, explore how optimizations improve performance and reduce errors, and discuss ongoing challenges such as noise, limited connectivity, and hardware diversity. No prior background in quantum computing is required—just curiosity about how software makes quantum computing possible.",
     "image": "Timeline_02.png",
     "poster": null,
-    "sessionTime": "TBA",
-    "sessionRoom": "TBA",
+    "sessionTime": "November 14th - 7:00 PM",
+    "sessionRoom": "Chase Auditorium",
     "social": {
       "linkedin": "#",
       "twitter": "#",
-      "website": "#"
+      "website": "https://sites.google.com/view/gushuli"
     }
   },
   {
