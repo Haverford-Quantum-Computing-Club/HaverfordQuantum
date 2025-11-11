@@ -1682,10 +1682,11 @@ footer {
     filter: blur(10px);
 }
 
-/* Hide default cursor on desktop - only when custom cursor is active */
+/* Custom cursor - keeping default cursor visible for better UX */
+/* Removed cursor: none to ensure users always have a visible cursor */
 @media (min-width: 769px) {
     body.custom-cursor-active {
-        cursor: none;
+        /* cursor: none; - Commented out to maintain default cursor visibility */
     }
 
     body.custom-cursor-active a,
@@ -1693,7 +1694,7 @@ footer {
     body.custom-cursor-active .week-card,
     body.custom-cursor-active .intro-card,
     body.custom-cursor-active .speaker-card {
-        cursor: none !important;
+        /* cursor: none !important; - Commented out to maintain default cursor visibility */
     }
 }
 
