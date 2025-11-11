@@ -1,24 +1,45 @@
 // Load and display schedule
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Schedule page loaded, fetching data...');
+    showLoading();
     loadSchedule();
 });
 
+function showLoading() {
+    const container = document.getElementById('schedule-container');
+    if (container) {
+        container.innerHTML = '<div style="text-align: center; padding: 4rem; color: var(--text-secondary);"><h3>Loading schedule...</h3></div>';
+    }
+}
+
 async function loadSchedule() {
     try {
+        console.log('Fetching schedule-data.json...');
         // Add cache-busting parameter to ensure fresh data
         const response = await fetch('schedule-data.json?v=' + Date.now());
+        console.log('Response status:', response.status);
         const scheduleData = await response.json();
+        console.log('Schedule data loaded:', scheduleData);
         displaySchedule(scheduleData);
     } catch (error) {
         console.error('Error loading schedule:', error);
-        displayError();
+        displayError(error.message);
     }
 }
 
 function displaySchedule(scheduleData) {
+    console.log('Displaying schedule with', scheduleData.length, 'days');
     const container = document.getElementById('schedule-container');
 
+    if (!container) {
+        console.error('schedule-container element not found!');
+        return;
+    }
+
+    container.innerHTML = ''; // Clear loading message
+
     scheduleData.forEach((dayData, index) => {
+        console.log('Adding day:', dayData.day, 'with', dayData.events.length, 'events');
         // Create day section
         const daySection = document.createElement('div');
         daySection.className = 'schedule-day';
@@ -81,12 +102,13 @@ function formatEventType(type) {
     return typeMap[type] || type;
 }
 
-function displayError() {
+function displayError(errorMsg) {
     const container = document.getElementById('schedule-container');
     container.innerHTML = `
-        <div class="error-message">
+        <div class="error-message" style="text-align: center; padding: 4rem;">
             <h3>⚠️ Unable to Load Schedule</h3>
             <p>Please try refreshing the page or contact us if the problem persists.</p>
+            ${errorMsg ? `<p style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">Error: ${errorMsg}</p>` : ''}
         </div>
     `;
 }
