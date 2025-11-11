@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadAnnouncements() {
     try {
-        const response = await fetch('announcements-data.json');
+        // Add cache-busting parameter to ensure fresh data
+        const response = await fetch('announcements-data.json?v=' + Date.now());
         const announcements = await response.json();
         displayAnnouncements(announcements);
     } catch (error) {

@@ -8,7 +8,8 @@
     // Load speakers data
     async function loadSpeakers() {
         try {
-            const response = await fetch('speakers-data.json');
+            // Add cache-busting parameter to ensure fresh data
+            const response = await fetch('speakers-data.json?v=' + Date.now());
             const speakers = await response.json();
             renderSpeakers(speakers);
         } catch (error) {

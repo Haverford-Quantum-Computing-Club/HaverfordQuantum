@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadSchedule() {
     try {
-        const response = await fetch('schedule-data.json');
+        // Add cache-busting parameter to ensure fresh data
+        const response = await fetch('schedule-data.json?v=' + Date.now());
         const scheduleData = await response.json();
         displaySchedule(scheduleData);
     } catch (error) {

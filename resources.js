@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadResources() {
     try {
-        const response = await fetch('resources-data.json');
+        // Add cache-busting parameter to ensure fresh data
+        const response = await fetch('resources-data.json?v=' + Date.now());
         const resourcesData = await response.json();
         displayResources(resourcesData);
     } catch (error) {
