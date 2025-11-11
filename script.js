@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMouseEffects();
     initFormValidation();
     initCountdown();
-    initCustomCursor();
+    // initCustomCursor(); // Disabled custom cursor for better UX and cursor visibility
     init3DCardEffects();
     initQuantumCircuit();
     initAnimatedCounter();
