@@ -1,0 +1,67 @@
+[
+  {
+    "id": "event-reminder-3days",
+    "message": "🎉 Only 3 days until Qiskit Fall Fest! Make sure you've registered and joined our Discord.",
+    "type": "info",
+    "link": {
+      "text": "Register Now",
+      "url": "registration.html"
+    },
+    "startDate": "2025-01-11",
+    "endDate": "2025-01-14",
+    "dismissible": true,
+    "active": true
+  },
+  {
+    "id": "schedule-change-example",
+    "message": "⚠️ Schedule Update: Dr. Gushu Li's talk has been moved to 7:30 PM in Chase Auditorium.",
+    "type": "warning",
+    "link": {
+      "text": "View Schedule",
+      "url": "schedule.html"
+    },
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-14",
+    "dismissible": true,
+    "active": false
+  },
+  {
+    "id": "resources-available",
+    "message": "📚 All workshop materials and notebooks are now available for download!",
+    "type": "success",
+    "link": {
+      "text": "Download Resources",
+      "url": "resources.html"
+    },
+    "startDate": "2025-01-13",
+    "endDate": "2025-01-16",
+    "dismissible": true,
+    "active": false
+  },
+  {
+    "id": "event-happening-now",
+    "message": "🚀 Qiskit Fall Fest is happening NOW! Check the schedule for current sessions.",
+    "type": "success",
+    "link": {
+      "text": "View Schedule",
+      "url": "schedule.html"
+    },
+    "startDate": "2025-01-14",
+    "endDate": "2025-01-15",
+    "dismissible": false,
+    "active": false
+  },
+  {
+    "id": "discord-join",
+    "message": "💬 Join our Discord server for real-time updates, team formation, and Q&A!",
+    "type": "info",
+    "link": {
+      "text": "Join Discord",
+      "url": "https://discord.gg/qPmNF3ae"
+    },
+    "startDate": "2025-01-01",
+    "endDate": "2025-01-16",
+    "dismissible": true,
+    "active": false
+  }
+]
