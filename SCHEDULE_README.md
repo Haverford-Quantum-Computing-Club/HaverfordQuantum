@@ -2,20 +2,21 @@
 
 ## How to Update the Schedule
 
-Your schedule is stored in the `schedule-data.json` file. Simply edit this file and commit it to GitHub to update your website's schedule!
+Your schedule data is embedded directly in the `schedule.js` file for reliable loading. To update the schedule, edit the `SCHEDULE_DATA` constant at the top of `schedule.js`.
 
 ## File Location
 ```
-HaverfordQuantum/schedule-data.json
+HaverfordQuantum/schedule.js
 ```
 
 ## How to Edit
 
-1. Open `schedule-data.json` in any text editor
-2. Edit the events, times, locations, or descriptions
-3. Save the file
-4. Commit and push to GitHub
-5. Your changes will appear on the website automatically!
+1. Open `schedule.js` in any text editor
+2. Find the `SCHEDULE_DATA` constant at the top (starts around line 2)
+3. Edit the events, times, locations, or descriptions within the data structure
+4. Save the file
+5. Commit and push to GitHub
+6. Your changes will appear on the website automatically!
 
 ## JSON Structure
 

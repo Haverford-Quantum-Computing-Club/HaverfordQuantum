@@ -1,36 +1,115 @@
-// Load and display schedule
+// Embedded schedule data to ensure it loads
+const SCHEDULE_DATA = [
+  {
+    "date": "Friday, November 14th, 2025",
+    "day": "Day 1 - Friday",
+    "events": [
+      {
+        "time": "5:00 PM - 7:00 PM",
+        "title": "Kick-Off & Tutorials",
+        "location": "TBA",
+        "description": "Kick-Off, Tutorials, Level 0 Notebook is up; Team pairings happening; Dinner is happening",
+        "type": "ceremony"
+      },
+      {
+        "time": "7:00 PM - 8:00 PM",
+        "title": "Keynote: Dr. Gushu Li",
+        "location": "TBA",
+        "description": "Guest Speaker: Dr. Gushu Li, Assistant Professor at the University of Pennsylvania",
+        "type": "talk"
+      },
+      {
+        "time": "8:00 PM - 9:15 PM",
+        "title": "Work on Level 0 Notebook",
+        "location": "TBA",
+        "description": "Work on Level 0 Notebook, We provide feedback",
+        "type": "challenge"
+      },
+      {
+        "time": "9:15 PM - 10:00 PM",
+        "title": "Tentative: IBM Speaker",
+        "location": "TBA",
+        "description": "Special guest speaker from IBM (tentative)",
+        "type": "talk"
+      },
+      {
+        "time": "10:00 PM - 12:00 AM",
+        "title": "Level 0 Submission & Level 1 Release",
+        "location": "TBA",
+        "description": "Submission for Level 0 Notebook due at 10:00pm; Level 1 Notebook is up. Team pairing for open challenges is happening",
+        "type": "challenge"
+      }
+    ]
+  },
+  {
+    "date": "Saturday, November 15th, 2025",
+    "day": "Day 2 - Saturday",
+    "events": [
+      {
+        "time": "9:00 AM - 12:00 PM",
+        "title": "Challenges Open",
+        "location": "TBA",
+        "description": "Challenges open; Teams stay paired as for Level 1; prizes are announced",
+        "type": "challenge"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "title": "Lunch Break",
+        "location": "TBA",
+        "description": "Lunch and networking",
+        "type": "break"
+      },
+      {
+        "time": "1:00 PM - 2:00 PM",
+        "title": "Feedback Session",
+        "location": "TBA",
+        "description": "Feedback is open for Challenge contenders",
+        "type": "hands-on"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "title": "Feedback & Progress Deadline",
+        "location": "TBA",
+        "description": "Feedback is open for Challenge contenders; Challenges progress due at 3:00pm",
+        "type": "challenge"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "title": "Presentation of Open Challenges",
+        "location": "TBA",
+        "description": "Teams present their open challenge solutions",
+        "type": "presentation"
+      },
+      {
+        "time": "4:00 PM - 5:30 PM",
+        "title": "Keynote: Dr. Phalgun Lolur",
+        "location": "TBA",
+        "description": "Guest Speaker: Dr. Phalgun Lolur, Global Scientific Quantum Development Lead, Capgemini's Quantum Lab",
+        "type": "talk"
+      },
+      {
+        "time": "6:00 PM - 6:45 PM",
+        "title": "Awards & Closing Ceremony",
+        "location": "TBA",
+        "description": "Winner Announcements, Certificates of Participates and Certificates of Achievement are distributed",
+        "type": "ceremony"
+      },
+      {
+        "time": "7:00 PM",
+        "title": "Dinner",
+        "location": "TBA",
+        "description": "Closing dinner and celebration",
+        "type": "break"
+      }
+    ]
+  }
+];
+
+// Load and display schedule immediately
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Schedule page loaded, fetching data...');
-    showLoading();
-    loadSchedule();
+    console.log('Schedule script loaded');
+    displaySchedule(SCHEDULE_DATA);
 });
-
-function showLoading() {
-    const container = document.getElementById('schedule-container');
-    if (container) {
-        container.innerHTML = '<div style="text-align: center; padding: 4rem; color: var(--text-secondary);"><h3>Loading schedule...</h3></div>';
-    }
-}
-
-async function loadSchedule() {
-    try {
-        console.log('Fetching schedule-data.json...');
-        // Add cache-busting parameter to ensure fresh data
-        const response = await fetch('./schedule-data.json?v=' + Date.now());
-        console.log('Response status:', response.status);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const scheduleData = await response.json();
-        console.log('Schedule data loaded:', scheduleData);
-        displaySchedule(scheduleData);
-    } catch (error) {
-        console.error('Error loading schedule:', error);
-        displayError(error.message);
-    }
-}
 
 function displaySchedule(scheduleData) {
     console.log('Displaying schedule with', scheduleData.length, 'days');
@@ -41,7 +120,7 @@ function displaySchedule(scheduleData) {
         return;
     }
 
-    container.innerHTML = ''; // Clear loading message
+    container.innerHTML = ''; // Clear any existing content
 
     scheduleData.forEach((dayData, index) => {
         console.log('Adding day:', dayData.day, 'with', dayData.events.length, 'events');
@@ -105,17 +184,6 @@ function formatEventType(type) {
         'presentation': 'Presentation'
     };
     return typeMap[type] || type;
-}
-
-function displayError(errorMsg) {
-    const container = document.getElementById('schedule-container');
-    container.innerHTML = `
-        <div class="error-message" style="text-align: center; padding: 4rem;">
-            <h3>⚠️ Unable to Load Schedule</h3>
-            <p>Please try refreshing the page or contact us if the problem persists.</p>
-            ${errorMsg ? `<p style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">Error: ${errorMsg}</p>` : ''}
-        </div>
-    `;
 }
 
 // Add custom CSS for schedule page
@@ -312,6 +380,17 @@ style.textContent = `
     .event-type-badge.presentation {
         background: rgba(255, 255, 255, 0.1);
         color: var(--text-secondary);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     @media (max-width: 768px) {
