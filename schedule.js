@@ -16,8 +16,13 @@ async function loadSchedule() {
     try {
         console.log('Fetching schedule-data.json...');
         // Add cache-busting parameter to ensure fresh data
-        const response = await fetch('schedule-data.json?v=' + Date.now());
+        const response = await fetch('./schedule-data.json?v=' + Date.now());
         console.log('Response status:', response.status);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
         const scheduleData = await response.json();
         console.log('Schedule data loaded:', scheduleData);
         displaySchedule(scheduleData);
