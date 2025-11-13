@@ -107,7 +107,7 @@ const SCHEDULE_DATA = [
 
 // Load and display schedule immediately
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Schedule script loaded');
+    console.log('Schedule script loaded - v2025-11-12');
     displaySchedule(SCHEDULE_DATA);
 });
 
