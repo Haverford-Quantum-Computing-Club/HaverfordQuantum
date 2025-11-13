@@ -4,7 +4,14 @@
     "day": "Day 1 - Friday",
     "events": [
       {
-        "time": "5:00 PM - 7:00 PM",
+        "time": "5:30 PM - 6:00 PM",
+        "title": "QBraid Tutorial by Rick Young, COO of QBraid",
+        "location": "Zoom",
+        "description": "Learning to use and navigate the QBraid platform where you will be running your code.",
+        "type": "talk"
+      },
+      {
+        "time": "6:00 PM - 7:00 PM",
         "title": "Kick-Off & Tutorials",
         "location": "TBA",
         "description": "Kick-Off, Tutorials, Level 0 Notebook is up; Team pairings happening; Dinner is happening",
