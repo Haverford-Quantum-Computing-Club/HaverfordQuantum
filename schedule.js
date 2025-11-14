@@ -7,42 +7,35 @@ const SCHEDULE_DATA = [
       {
         "time": "5:30 PM - 6:00 PM",
         "title": "QBraid Tutorial by Rick Young, COO of QBraid",
-        "location": "Zoom",
+        "location": "LUT 129/Zoom",
         "description": "Learning to use and navigate the QBraid platform where you will be running your code.",
         "type": "talk"
       },
       {
         "time": "6:00 PM - 7:00 PM",
         "title": "Kick-Off & Tutorials",
-        "location": "TBA",
+        "location": "VCAM",
         "description": "Kick-Off, Tutorials, Level 0 Notebook is up; Team pairings happening; Dinner is happening",
         "type": "ceremony"
       },
       {
         "time": "7:00 PM - 8:00 PM",
         "title": "Keynote: Dr. Gushu Li",
-        "location": "TBA",
+        "location": "CHASE AUDITORIUM",
         "description": "Guest Speaker: Dr. Gushu Li, Assistant Professor at the University of Pennsylvania",
         "type": "talk"
       },
       {
-        "time": "8:00 PM - 9:15 PM",
+        "time": "8:00 PM - 10:00 PM",
         "title": "Work on Level 0 Notebook",
-        "location": "TBA",
+        "location": "HALL ROOMS/VCAM",
         "description": "Work on Level 0 Notebook, We provide feedback",
         "type": "challenge"
       },
       {
-        "time": "9:15 PM - 10:00 PM",
-        "title": "Tentative: IBM Speaker",
-        "location": "TBA",
-        "description": "Special guest speaker from IBM (tentative)",
-        "type": "talk"
-      },
-      {
-        "time": "10:00 PM - 12:00 AM",
+        "time": "10:00 PM - TBD",
         "title": "Level 0 Submission & Level 1 Release",
-        "location": "TBA",
+        "location": "HALL ROOMS/VCAM",
         "description": "Submission for Level 0 Notebook due at 10:00pm; Level 1 Notebook is up. Team pairing for open challenges is happening",
         "type": "challenge"
       }
@@ -55,56 +48,56 @@ const SCHEDULE_DATA = [
       {
         "time": "9:00 AM - 12:00 PM",
         "title": "Challenges Open",
-        "location": "TBA",
-        "description": "Challenges open; Teams stay paired as for Level 1; prizes are announced",
+        "location": "HALL ROOMS/VCAM",
+        "description": "Open challenges open; Teams stay paired as for Level 1; prizes are announced",
         "type": "challenge"
       },
       {
         "time": "12:00 PM - 1:00 PM",
         "title": "Lunch Break",
-        "location": "TBA",
+        "location": "DC",
         "description": "Lunch and networking",
         "type": "break"
       },
       {
-        "time": "1:00 PM - 2:00 PM",
+        "time": "1:00 PM - 3:00 PM",
         "title": "Feedback Session",
-        "location": "TBA",
+        "location": "HALL ROOMS/VCAM",
         "description": "Feedback is open for Challenge contenders",
         "type": "hands-on"
       },
       {
-        "time": "2:00 PM - 3:00 PM",
-        "title": "Feedback & Progress Deadline",
-        "location": "TBA",
-        "description": "Feedback is open for Challenge contenders; Challenges progress due at 3:00pm",
-        "type": "challenge"
-      },
-      {
         "time": "3:00 PM - 4:00 PM",
         "title": "Presentation of Open Challenges",
-        "location": "TBA",
-        "description": "Teams present their open challenge solutions",
+        "location": "VCAM SCREENING ROOM",
+        "description": "Challenges progress due at 3:00pm. Teams present their open challenge solutions",
         "type": "presentation"
       },
       {
         "time": "4:00 PM - 5:30 PM",
         "title": "Keynote: Dr. Phalgun Lolur",
-        "location": "TBA",
+        "location": "VCAM SCREENING ROOM",
         "description": "Guest Speaker: Dr. Phalgun Lolur, Global Scientific Quantum Development Lead, Capgemini's Quantum Lab",
         "type": "talk"
       },
       {
+        "time": "5:30 PM - 6:00 PM",
+        "title": "join ITrack Pitches",
+        "location": "VCAM",
+        "description": "Winner Announcements, Certificates of Participates and Certificates of Achievement are distributed",
+        "type": "ceremony"
+      },
+      {
         "time": "6:00 PM - 6:45 PM",
         "title": "Awards & Closing Ceremony",
-        "location": "TBA",
+        "location": "VCAM",
         "description": "Winner Announcements, Certificates of Participates and Certificates of Achievement are distributed",
         "type": "ceremony"
       },
       {
         "time": "7:00 PM",
         "title": "Dinner",
-        "location": "TBA",
+        "location": "VCAM",
         "description": "Closing dinner and celebration",
         "type": "break"
       }
