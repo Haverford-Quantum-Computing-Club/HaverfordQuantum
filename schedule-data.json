@@ -48,7 +48,7 @@
         "time": "9:00 AM - 12:00 PM",
         "title": "Challenges Open",
         "location": "HALL ROOMS/VCAM",
-        "description": "Challenges open; Teams stay paired as for Level 1; prizes are announced",
+        "description": "Open challenges open; Teams stay paired as for Level 1; prizes are announced",
         "type": "challenge"
       },
       {
@@ -68,14 +68,14 @@
       {
         "time": "3:00 PM - 4:00 PM",
         "title": "Presentation of Open Challenges",
-        "location": "TBA",
+        "location": "VCAM SCREENING ROOM",
         "description": "Challenges progress due at 3:00pm. Teams present their open challenge solutions",
         "type": "presentation"
       },
       {
         "time": "4:00 PM - 5:30 PM",
         "title": "Keynote: Dr. Phalgun Lolur",
-        "location": "TBA",
+        "location": "VCAM SCREENING ROOM",
         "description": "Guest Speaker: Dr. Phalgun Lolur, Global Scientific Quantum Development Lead, Capgemini's Quantum Lab",
         "type": "talk"
       },
@@ -89,14 +89,14 @@
       {
         "time": "6:00 PM - 6:45 PM",
         "title": "Awards & Closing Ceremony",
-        "location": "TBA",
+        "location": "VCAM",
         "description": "Winner Announcements, Certificates of Participates and Certificates of Achievement are distributed",
         "type": "ceremony"
       },
       {
         "time": "7:00 PM",
         "title": "Dinner",
-        "location": "TBA",
+        "location": "VCAM",
         "description": "Closing dinner and celebration",
         "type": "break"
       }
