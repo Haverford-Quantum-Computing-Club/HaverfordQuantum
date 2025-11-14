@@ -59,24 +59,17 @@
         "type": "break"
       },
       {
-        "time": "1:00 PM - 2:00 PM",
+        "time": "1:00 PM - 3:00 PM",
         "title": "Feedback Session",
         "location": "TBA",
         "description": "Feedback is open for Challenge contenders",
         "type": "hands-on"
       },
       {
-        "time": "2:00 PM - 3:00 PM",
-        "title": "Feedback & Progress Deadline",
-        "location": "TBA",
-        "description": "Feedback is open for Challenge contenders; Challenges progress due at 3:00pm",
-        "type": "challenge"
-      },
-      {
         "time": "3:00 PM - 4:00 PM",
         "title": "Presentation of Open Challenges",
         "location": "TBA",
-        "description": "Teams present their open challenge solutions",
+        "description": "Challenges progress due at 3:00pm. Teams present their open challenge solutions",
         "type": "presentation"
       },
       {
