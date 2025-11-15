@@ -34,23 +34,5 @@
       "twitter": "#",
       "website": "https://sites.google.com/view/gushuli"
     }
-  },
-  {
-    "id": "speaker3",
-    "name": "To be Announced",
-    "title": "TBA",
-    "organization": "TBA",
-    "bio": "Speaker details will be announced soon. Check back for updates!",
-    "talkTitle": "To be Announced",
-    "talkAbstract": "Talk details coming soon.",
-    "image": "Timeline_04.png",
-    "poster": null,
-    "sessionTime": "TBA",
-    "sessionRoom": "TBA",
-    "social": {
-      "linkedin": "#",
-      "twitter": "#",
-      "website": "#"
-    }
   }
 ]
